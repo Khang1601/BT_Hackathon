@@ -48,7 +48,7 @@ export default function Scoreboard() {
     function increaseCount(doId) {
         const updateList = doList.map((doItem) => {
             if (doItem.id === doId && doItem.score < 10) {
-                return { ...doItem, score: doItem.score + 1, score: doItem.score + 1 };
+                return { ...doItem, score: doItem.score + 1 };
             }
             return doItem;
         });
@@ -59,7 +59,7 @@ export default function Scoreboard() {
         const updateList = doList.map((doItem) => {
             if (doItem.id === doId && doItem.score > 0) {
                 console.log(doItem);
-                return { ...doItem, score: doItem.score - 1, score: doItem.score - 1 };
+                return { ...doItem, score: doItem.score - 1};
             }
 
             return doItem;
